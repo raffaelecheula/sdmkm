@@ -219,6 +219,9 @@ def surface_energies(e_surf_funs, deltamu_A, deltamu_B):
 def scale_factor_from_diameter(lattice, miller_list, e_surf_list, miller_supp,
                                e_surf_supp, wulff_diameter):
 
+    if miller_supp is None:
+        miller_supp = (1, 0, 0)
+
     if e_surf_supp is None or e_surf_supp > 0.:
         e_surf_supp_zero = 1e-10
     else:

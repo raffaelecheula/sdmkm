@@ -375,7 +375,7 @@ from e_surf_funs_CO_on_Rh import e_surf_fun_dict, miller_supp, e_surf_supp
 H0_0K_dict = get_H0_0K_dict(phase = gas, units = eV/molecule)
 
 if len(miller_list) == 1:
-    miller_supp = miller_list[0]
+    miller_supp = None
     e_surf_supp = None
 
 for i in range(len(miller_list)):
